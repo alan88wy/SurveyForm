@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  #title {
+    text-align: center;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  #description {
+    text-align: center;
+    max-width: 100%;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .container {
+    max-width: 100%;
+    width: 800px;
+    height: 100%;
+    margin: auto;
+  }
+
+  #survey-form {
+    background: hsl(229deg, 83%, 11%);
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 2.5rem;
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  #name-label {
+    display: block;
+    font-size: 1.2rem;
+    max-width: 100%;
+    width: 100%;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  #name {
+    font-size: 1.2rem;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  #email-label {
+    display: block;
+    font-size: 1.2rem;
+    max-width: 100%;
+    width: 100%;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  #email {
+    font-size: 1.2rem;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  #number-label {
+    display: block;
+    font-size: 1.2rem;
+    max-width: 100%;
+    width: 100%;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  #number {
+    font-size: 1.2rem;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  #dropdown-label {
+    display: block;
+    font-size: 1.2rem;
+    max-width: 100%;
+    width: 100%;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  #dropdown {
+    font-size: 3.5rem;
+    max-width: 100%;
+    width: 100%;
+    height: 20px;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  #radio-label {
+    display: block;
+    font-size: 1.2rem;
+    max-width: 100%;
+    width: 100%;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  #radio {
+    font-size: 1.2rem;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0.8rem;
+    padding-top: 0.8rem;
+    color: white;
+  }
+
+  #lower {
+    font-size: 0.9rem;
+  }
+</style>
+<body>
+  <div>
+    <div>
+      <h1  id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">
+        <i>Thank you for taking the time to help us improve the platform</i>
+      </p>
+    </div>
+    <div class="container">
+      <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input id="name" type="text" name="name" placeholder="Enter Your Name" required><br>
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter Your Email" required><br>
+        <label for="age" id="number-label">Age (optional)</label>
+        <input type="number" name="age" id="number" min="10" max="99" placeholder="Age" required><br>
+        <label for="dropdown" id="dropdown-label">Which option best describes your current role ?</label>
+        <select id="dropdown" name="role">
+          <option value="0">Select current role:</option>
+          <option value="1">Student</option>
+          <option value="2">Full Time Job</option>
+          <option value="3">Full Timr Learner</option>
+          <option value="4">Prefer not to say</option>
+          <option value="5">Other</option>
+        </select> <br>
+        <p>Would you recommend freeCodeCamp to a friend?<p>
+        <label id="recommend">
+          <input type="radio" name="recommend" value="Definitely">  Definitely<br>
+          <input type="radio" name="recommend" value="Not sure">  Not sure<br>
+          <input type="radio" name="recommend" value="Maybe">  Maybe<br>
+        </label>
+
+        <p>What would you like to see improved? <span id="lower">(Check all that apply)</span><p>
+        <label id="recommend">
+        <input type="checkbox" name="checkbx" value="1"> Front-end project<br>
+        <input type="checkbox" name="checkbx" value="1"> Back-end Projects<br>
+        <input type="checkbox" name="checkbx" value="1"> Data Visualization<br>
+        <input type="checkbox" name="checkbx" value="1"> Front-end project<br>
+        </label>
+        <br>
+        <label for="textarea">Any comments or suggestions?</label><br>
+         <textarea id="textarea" rows="4" cols="100">
+
+        </textarea>
+        <br>
+        <input type="submit" id="submit" value="Submit">
+       </form>
+    </div>
+  </div>
+</body>
+</html>
